@@ -1,0 +1,10 @@
+.title {
+  font-weight: bold;
+  margin: 0;
+  margin-right: auto;
+}
+
+.book {
+  display: flex
+  
+}

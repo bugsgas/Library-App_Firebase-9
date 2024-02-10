@@ -3,12 +3,12 @@ import BookForm from '../components/BookForm'
 import { useCollection } from '../hooks/useCollection';
 
 export default function Home() {
-  const { documents: books } = useCollection('books')
+  const { documents: books } = useCollection('books',)
 
   return (
     <div className="App">
-      {books && <BookList books={books} />}
       <BookForm />
+      {books && <BookList books={books} />}
     </div>
   );
 }

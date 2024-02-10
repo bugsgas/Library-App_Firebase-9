@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
+import UserBook from './components/UserBook'
 
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
             <Route 
               exact path="/" 
               element={user ? <Home /> : <Navigate to="/login" />} />
+            <Route 
+              exact path="/mybooks" 
+              element={user ? <UserBook /> : <Navigate to="/login" />} />
             <Route 
               path="/login" 
               element={!user ? <Login /> : <Navigate to="/" />} />

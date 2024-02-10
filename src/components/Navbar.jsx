@@ -10,12 +10,12 @@ export default function Navbar() {
 
   return (
     <nav>
-      <h1>My Reading List</h1>
+      <h1>Secret Library</h1>
       <ul>
         {user && (
           <>
             <li><Link to="/">Home</Link></li>
-            <li>hello, {user.displayName}</li>
+            <li><Link to="/mybooks">{user.displayName}'s Books</Link></li>
           </>
         
         )}

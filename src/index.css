@@ -40,19 +40,19 @@ nav a {
   padding: 10px;
   background: #fff;
   margin: 10px 0;
-  cursor: pointer;
 }
 label, label span {
   display: block;
   margin: 6px 0;
 }
 input {
-  padding: 6px;
+  padding: 8px;
+  margin-top: 22px;
   margin-bottom: 12px;
 }
 button {
   background: #772eff;
   color: #fff;
   border: 0;
-  padding: 6px 8px;
+  padding: 10px 18px;
 }

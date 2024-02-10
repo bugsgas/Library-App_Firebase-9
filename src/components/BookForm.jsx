@@ -16,7 +16,8 @@ export default function BookForm() {
 
     await addDoc(collection(db, 'books'), {
       title: newBook,
-      uid: user.uid
+      uid: user.uid,
+      name: user.displayName
     })
 
     setNewBook('')
@@ -25,15 +26,16 @@ export default function BookForm() {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        <span>Add a new book title:</span>
         <input 
           required
           type="text"
           onChange={(e) => setNewBook(e.target.value)}
           value={newBook}
+          placeholder='Add a new book title'
         />
+        <button>Add</button>
       </label>
-      <button>Add</button>
+      
     </form>
   )
 }
