@@ -9,7 +9,9 @@ export default function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    login(email, password)
+    if (email && password) {
+      login(email, password)
+    }
   }
   
   return (
@@ -23,6 +25,7 @@ export default function Login() {
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             placeholder='Email'
+            autoComplete="email"
           />
         </label>
         <label>
@@ -32,6 +35,8 @@ export default function Login() {
             onChange={(e) => setPassword(e.target.value)}
             value={password}
             placeholder='Password'
+            autoComplete="new-password"
+            
           />
         </label>
         <button>Login</button>

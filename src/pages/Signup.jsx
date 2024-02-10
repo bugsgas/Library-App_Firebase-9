@@ -25,6 +25,7 @@ export default function Signup() {
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             placeholder='Email'
+            autoComplete="email"
           />
         </label>
         <label>
@@ -34,6 +35,7 @@ export default function Signup() {
             onChange={(e) => setPassword(e.target.value)}
             value={password}
             placeholder='Password'
+            autoComplete="new-password"
           />
         </label>
         <label>
