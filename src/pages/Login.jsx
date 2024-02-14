@@ -41,6 +41,7 @@ export default function Login() {
         </label>
         <button>Login</button>
         {error && <p>{error}</p>}
+        <p>For testing email:user@test.dev pass:user123</p>
       </form>
     </div>
   )
